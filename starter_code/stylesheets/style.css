@@ -5,116 +5,410 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+    body{
+        color: #5b5e6d;
+        font-family: 'Lato', sans-serif;
+    }
+    button{
+        color: white;
+        border-radius: 10px;
+        background-color: #192592;
+        font-size: 2vw;
+        width: 100%;
+        margin: 1vw 0;
+        padding: 1vw 0;
+    }
+    p {
+        font-weight: lighter;
+        color: #5b5e6d;
+        margin: 1vw 0;
+    }
+    a:link  {
+        text-decoration: underline;
+        color: #192592;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        background-color: #F4F3F4;
+        height: 100px;
+        width: 100%;
+        color: #5b5e6d;
+    }
+    nav img{
+        width: auto; 
+        height: 7vw;
+        padding-left: 30px;
 
-html {
-    font-size: 10px;
+    }
+    nav i {
+
+        padding-right: 30px;
+    }
+    nav ul {
+        display: none;
+        align-content: flex-end;
+        padding-right: 30px;
+    }
+
+    header {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    header div {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        height: 100%;
+        width: 80%;
+    }
+    header div h1 {
+        font-size: 5vw;
+        line-height: 7vw;
+        color: #2C303F;
+        font-family: 'Noto Serif', serif;
+    }
+    input{
+        padding: 1vw;
+        width: 90%;
+        height: 30px;
+        font-size:1.3vw ;
+        border-radius: 10px;
+    }
+    h2 {
+        font-size: 4vw;
+        line-height: 5vw;
+        margin: 1vw 0;
+        color: #2C303F;
+
+        font-family: 'Noto Serif', serif;
+    }
+
+header img {
+    order: 0;
+    height: auto;
+    width: 80%;
+}
+main {
+    padding: 2vw 0;
+}
+    main div:first-child{
+        display: flex;
+        flex-flow: column; 
+        justify-content: center;
+        align-items: center;
+        background-color: #F4F3F4;
+        padding: 3vw;
+    }
+    main div:first-child div .mainImages{
+        align-self: center;
+        width: auto;
+        height: 7vw;
+    }
+    main div:last-child{
+        display: flex;
+        flex-flow: column;
+        text-align: center; 
+        align-items: center;
+    }
+    main div:last-child input{
+        text-align: left;
+    }
+    footer {
+        border-top: 1px solid grey;
+    }
+    footer div:first-child{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    footer div:first-child img{
+        padding: 2vw 0;
+        width: auto;
+        height: 60px;
+        margin: 0 30%;
+    }
+    footer div:first-child ul{
+        width: 50%;
+    }
+    footer div:first-child ul li {
+        padding: 0 0 0 20px
+    }
+    
+    footer div:last-child {
+        width: 100%;
+        padding: 5px 0;
+        display: flex;
+        flex-flow: column;
+        background-color: #F4F3F4;
+    }
+    footer div:last-child  ul{
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+    footer div:last-child div:first-child{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    footer div:last-child div:first-child img{
+        width: auto;
+        height: 30px;
+        margin: 0;
+    }
+
+    footer div:last-child .🐷{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .🐷 i {
+        margin-left:1vw;
+    }
+
+
+
+@media (min-width: 768px){
+    body{
+        color: rgb(0, 195, 255);
+    } 
+    main div:first-child{
+        display: flex;
+        flex-flow:  column wrap; 
+        align-items: center;
+    }
+    main div:first-child div{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    main div:first-child div .mainImages{
+        align-self: center;
+        width: 40%;
+        height: auto;
+    }
+    main div:last-child{
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+        text-align: center; 
+        align-items: center;
+        padding: 10px;
+    }
+
+    main div:last-child button{
+        width: 20%;
+    }
+
+    main div:last-child input{
+        padding: 1vw;
+        width: 30%;
+        height: 30px;
+        font-size:1.3vw ;
+    }
+
+
+footer {
+    border-top: 1px solid grey;
+}
+footer div:first-child{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-basis: 20%;
+}
+footer div:first-child img{
+    width: auto;
+    height: 90px;
+    margin: 0 3% 0 0 ;
+}
+footer div:first-child ul{
+    width: 20%;
 }
 
-body {
-    font-size: 2rem;
+footer div:last-child {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+footer div:last-child  ul{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+footer div:last-child div:first-child{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 7vw;
+}
+footer div:last-child div:first-child img{
+    width: auto;
+    height: 60px;
+    margin: 0;
 }
 
-nav {
+footer div:last-child .🐷{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+}
+
+
+
+
+@media (min-width: 961px){
+    body{
+        color: limegreen;
+    }
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+    body {
+    color:red;
+}
+.fa-bars {
+    display: none;
+}
+nav ul {
+    display: flex;
+    align-content: flex-end;
+}
+nav ul li {
+    margin-left: 30px;
+}
+
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background-color: red;
-    color: #5b5e6d;
+    background-color: #F4F3F4;
     height: 100px;
     width: 100%;
 }
-
 nav img{
-    height: 8vh;
-    width: auto;
-    margin-left: 30px;
-}
-nav div {
+    width: auto; 
+    height: 10vw;
+    padding-left: 30px;
 
-}
-
-.items {
-    display: none;
-    
-}
-
-.menuHamburguesa {
-    margin-right: 30px;
 }
 
 header {
     display: flex;
-    flex-wrap: wrap-reverse;
-    background-color: blue;
-    margin: 0 auto;
-    width: 80%;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 600px;
+    width: auto; 
+    margin: 40px;
 }
-
-header button {
-    width: 100%;
-    background-color: blueviolet;
+header img {
+    order: 0;
+    height: auto;
+    width: 50%;
 }
-
-header a {
-    color:white;
-}
-
-main{
-    background-color: aquamarine;
-    margin: 0 auto;
-    width: 80%; 
+header div {
     display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-
+    flex-flow: column wrap;
+    height: 100%;
+    width: 50%;
 }
-
-main div {
+main div:first-child{
     display: flex;
-    flex-flow: column;
+    flex-flow: column; 
 }
 
-main div img {
-    height: 3em;
+main div:first-child div{
+    display: flex;
+
+}
+
+main div:first-child div .mainImages{
+
+    flex-basis: 33%;
+    align-self: center;
+    width: 33%;
+    height: auto;
 }
 
 footer {
-    background-color: #5b5e6d;
-
-
+    border-top: 1px solid grey;
+}
+footer div:first-child{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-basis: 15%;
+}
+footer div:first-child img{
+    width: auto;
+    height: 60px;
+    margin: 0 15% 0 0 ;
+}
+footer div:first-child ul{
+    width: 15%;
 }
 
-footer img{
-    background-color: red;
-    height: 6rem;
-    width: 6rem;
+footer div:last-child {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+footer div:last-child  ul{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+footer div:last-child div:first-child{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 50%;
+}
+footer div:last-child div:first-child img{
+    width: auto;
+    height: 60px;
+    margin: 0;
+}
 
+footer div:last-child .🐷{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10%;
 }
 
 
-
-
-
-
-
-
-
-
-
-@media (min-width: 768x) {
-
-
-    .items {
-        display: flex;
-        margin-right: 30px
-    
-    }
-    
-
-.menuHamburguesa {
-    display: none;
-}
 
 }
